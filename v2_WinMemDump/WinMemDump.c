@@ -39,7 +39,6 @@ void mem_data(LPVOID targetAddr){
 }
 
 
-
 int main(void){
     int test_value = 0x12345678;
     LPVOID test_Addr = &test_value;
