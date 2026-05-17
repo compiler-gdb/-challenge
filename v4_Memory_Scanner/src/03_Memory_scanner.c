@@ -49,7 +49,7 @@ void scanning_mem_value(LPVOID targetAdrr, SYSTEM_INFO si){
 
         if(mbi.State == MEM_COMMIT && VirtualQuery(addr_min, &mbi, sizeof(mbi)) == sizeof(mbi) && mbi.Protect == PAGE_READWRITE || mbi.Protect == PAGE_READONLY){
             
-            //mbi.baseAddress(영역의 시작 주소)에서 mbi.regionsize 만큼 더하고 <를 이용해서 검사.
+            //mbi.baseAddress(영역의 시작 주소)에서 mbi.regionsize 만큼 더하고 <를 이용해서 검사합니다.
             for(base_addr; base_addr < addr_size; base_addr++){
                 printf("Address: %p | %02x \n", base_addr, base_addr[0]);
             }
