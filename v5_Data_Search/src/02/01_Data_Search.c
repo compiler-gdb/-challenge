@@ -29,7 +29,7 @@ void state(LPVOID addr_min, LPVOID addr_max){
 
 
 
-    //처음부터 끝까지 돌린다.
+    //처음부터 끝까지 돌립니다.
      for(; start_addr < end_addr; start_addr++){
 
         if(mbi.State == MEM_COMMIT){
